@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfólio de Giovanni Godoy — estudante de TI e desenvolvedor web em formação. Transformando ideias em experiências digitais.">
+  <meta name="author" content="Giovanni Godoy">
+  <title>Giovanni Godoy | Portfólio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ============================================================
+       HEADER / NAV
+  ============================================================ -->
+  <header class="topbar" id="topbar" role="banner">
+    <a class="brand" href="#inicio" aria-label="Giovanni Godoy — voltar ao início">
+    </a>
+
+    <nav aria-label="Navegação principal" id="desktopNav">
+      <a href="#inicio" class="nav-link" data-section="inicio">Início</a>
+      <a href="#sobre" class="nav-link" data-section="sobre">Sobre</a>
+      <a href="#projetos" class="nav-link" data-section="projetos">Projetos</a>
+      <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile menu -->
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Menu mobile" aria-hidden="true">
+    <a href="#inicio" class="nav-link">Início</a>
+    <a href="#sobre" class="nav-link">Sobre</a>
+    <a href="#projetos" class="nav-link">Projetos</a>
+    <a href="#skills" class="nav-link">Skills</a>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="hero section" id="inicio" aria-label="Apresentação">
+      <div class="hero-inner">
+        <p class="eyebrow reveal" data-delay="0">
+          <span class="eyebrow-line" aria-hidden="true"></span>
+          ESTUDANTE DE TI &nbsp;·&nbsp; DESENVOLVIMENTO WEB
+        </p>
+
+        <h1 class="reveal" data-delay="1">
+          Olá, eu sou<br>
+          <span class="highlight">Giovanni Godoy</span><span class="cursor-blink" aria-hidden="true">_</span>
+        </h1>
+
+        <p class="hero-text reveal" data-delay="2">
+          Estou aprendendo, criando projetos e transformando ideias em <em>experiências digitais</em>.
+        </p>
+
+        <div class="hero-actions reveal" data-delay="3">
+          <a class="btn btn-primary" href="#projetos" id="heroCtaProjects">
+            Ver projetos <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+          </a>
+          <a class="btn btn-ghost" href="#contato" id="heroCtaContact">
+            Entrar em contato
+          </a>
+        </div>
+
+        <div class="hero-scroll-hint reveal" data-delay="4" aria-hidden="true">
+          <span class="scroll-line"></span>
+          <span class="scroll-label">scroll</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SOBRE MIM
+    ============================================================ -->
+    <section class="section about" id="sobre" aria-labelledby="sobreTitle">
+      <div class="section-heading">
+        <span class="section-number reveal" data-delay="0">01 / SOBRE</span>
+        <h2 id="sobreTitle" class="reveal" data-delay="1">
+          Sobre mim <span>&amp; objetivos</span>
+        </h2>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-panel reveal" data-delay="2">
+          <p>
+            Sou estudante do <strong>Ensino Médio Técnico em Informática</strong>, interessado em tecnologia,
+            desenvolvimento web e inovação. Gosto de aprender na prática e transformar o que estudo em projetos reais.
+          </p>
+          <p>
+            Meu objetivo é conquistar uma oportunidade na área de TI, ganhar experiência, evoluir tecnicamente e
+            colaborar com soluções úteis e bem construídas.
+          </p>
+        </div>
+
+        <ul class="about-facts reveal" data-delay="3" aria-label="Dados rápidos">
+          <li>
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+            <span>Ensino Médio Técnico em Informática</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-map-pin" aria-hidden="true"></i>
+            <span>Brasil</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-code" aria-hidden="true"></i>
+            <span>Foco em desenvolvimento web</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+            <span>Em busca do primeiro emprego em TI</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROJETOS
+    ============================================================ -->
+    <section class="section projects" id="projetos" aria-labelledby="projetosTitle">
+      <div class="section-heading">
+        <span class="section-number reveal" data-delay="0">02 / PORTFÓLIO</span>
+        <h2 id="projetosTitle" class="reveal" data-delay="1">
+          Projetos <span>em destaque</span>
+        </h2>
+        <p class="section-desc reveal" data-delay="2">
+          Alguns projetos que representam minha evolução e prática.
+        </p>
+      </div>
+
+      <div class="project-grid">
+
+        <!-- Projeto 01 -->
+        <article class="project-card reveal" data-delay="0" aria-label="Projeto Gerador de Frases">
+          <div class="project-top">
+            <span class="project-index">PROJETO 01</span>
+            <span class="project-symbol" aria-hidden="true">
+              <i class="fa-solid fa-laptop-code"></i>
+            </span>
+          </div>
+          <h3>Gerador de Frases</h3>
+          <p>Um programa feito para treinar noções de lógica, gerando frases de forma dinâmica no navegador.</p>
+          <div class="tags" aria-label="Tecnologias utilizadas">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a class="visit-link" href="https://ia-frases.vercel.app/" target="_blank" rel="noopener noreferrer"
+              id="proj1Visit" aria-label="Visitar projeto Gerador de Frases (abre em nova aba)">
+              Visitar projeto <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
+            <a class="github-link" href="https://github.com/36591-lang/IA.frases" target="_blank"
+              rel="noopener noreferrer" id="proj1Github"
+              aria-label="Repositório GitHub — Gerador de Frases (abre em nova aba)">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Projeto 02 -->
+        <article class="project-card reveal" data-delay="1" aria-label="Projeto Complete o Ditado">
+          <div class="project-top">
+            <span class="project-index">PROJETO 02</span>
+            <span class="project-symbol" aria-hidden="true">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </span>
+          </div>
+          <h3>Complete o Ditado</h3>
+          <p>Jogo desenvolvido com conhecimentos de criação de prompts e uso de ferramentas de IA como aliadas no
+            processo criativo.</p>
+          <div class="tags" aria-label="Tecnologias utilizadas">
+            <span>IA</span><span>Prompt Engineering</span>
+          </div>
+          <div class="project-links">
+            <a class="visit-link" href="https://giovanni-jogo20.vercel.app/" target="_blank" rel="noopener noreferrer"
+              id="proj2Visit" aria-label="Visitar projeto Complete o Ditado (abre em nova aba)">
+              Visitar projeto <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
+            <a class="github-link" href="https://github.com/36591-lang/Giovanni-Jogo2.0" target="_blank"
+              rel="noopener noreferrer" id="proj2Github"
+              aria-label="Repositório GitHub — Complete o Ditado (abre em nova aba)">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Projeto 03 -->
+        <article class="project-card reveal" data-delay="2" aria-label="Projeto Vorax">
+          <div class="project-top">
+            <span class="project-index">PROJETO 03</span>
+            <span class="project-symbol" aria-hidden="true">
+              <i class="fa-solid fa-gamepad"></i>
+            </span>
+          </div>
+          <h3>Vorax</h3>
+          <p>Loja de skins de jogos com sistema de login interativo, explorando autenticação e design de interface.</p>
+          <div class="tags" aria-label="Tecnologias utilizadas">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a class="visit-link" href="https://skin-ag.vercel.app/" target="_blank" rel="noopener noreferrer"
+              id="proj3Visit" aria-label="Visitar projeto Vorax (abre em nova aba)">
+              Visitar projeto <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
+            <a class="github-link" href="https://github.com/36591-lang/SKIN-AG" target="_blank"
+              rel="noopener noreferrer" id="proj3Github" aria-label="Repositório GitHub — Vorax (abre em nova aba)">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SKILLS
+    ============================================================ -->
+    <section class="section skills" id="skills" aria-labelledby="skillsTitle">
+      <div class="section-heading">
+        <span class="section-number reveal" data-delay="0">03 / FERRAMENTAS</span>
+        <h2 id="skillsTitle" class="reveal" data-delay="1">
+          Minhas <span>skills</span>
+        </h2>
+        <p class="section-desc reveal" data-delay="2">
+          Conhecimentos que venho desenvolvendo e aprimorando.
+        </p>
+      </div>
+
+      <ul class="skills-list" aria-label="Lista de habilidades">
+        <li class="skill-item reveal" data-delay="0">
+          <span class="skill-icon" aria-hidden="true"><i class="fa-brands fa-html5"></i></span>
+          <span class="skill-name">HTML</span>
+        </li>
+        <li class="skill-item reveal" data-delay="1">
+          <span class="skill-icon" aria-hidden="true"><i class="fa-brands fa-css3-alt"></i></span>
+          <span class="skill-name">CSS</span>
+        </li>
+        <li class="skill-item reveal" data-delay="2">
+          <span class="skill-icon" aria-hidden="true"><i class="fa-brands fa-js"></i></span>
+          <span class="skill-name">JavaScript básico</span>
+        </li>
+        <li class="skill-item reveal" data-delay="3">
+          <span class="skill-icon" aria-hidden="true"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+          <span class="skill-name">Ferramentas de IA</span>
+        </li>
+        <li class="skill-item reveal" data-delay="4">
+          <span class="skill-icon" aria-hidden="true"><i class="fa-solid fa-file-lines"></i></span>
+          <span class="skill-name">Pacote Office</span>
+        </li>
+        <li class="skill-item reveal" data-delay="5">
+          <span class="skill-icon" aria-hidden="true"><i class="fa-solid fa-people-group"></i></span>
+          <span class="skill-name">Comunicação</span>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+
+  <footer class="footer" role="contentinfo">
+    <a class="brand" href="#inicio" aria-label="Giovanni Godoy — voltar ao início">
+    </a>
+    <p>Feito por <strong>Giovanni Godoy</strong> &middot; <span id="year"></span></p>
+    <a class="back-top" href="#inicio" aria-label="Voltar ao topo da página">
+      <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
